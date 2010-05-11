@@ -1,0 +1,12 @@
+This project is a demonstration of using the "contenteditable" attribute to edit an XML file in a web browser.
+
+When index.php is loaded, it reads an XML file ('data.xml' is included as an example) and converts it to an HTML table. 
+
+The cells of the table are made editable using the contenteditable attribute.
+
+When the HTML table is saved, it is converted back to XML and saved to the original file ('data.xml'). 
+
+Future possibilities:
+* Use XSL for the transformations.
+* Perform the transformations in Javascript.
+* Allow an XML file to be uploaded for editing, then output when saved.
