@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compounds>
+  <headings xmlns="org.hubmed.headings">
+    <h element="id" title="ID"/>
+    <h element="iupac-name" title="IUPAC Name"/>
+    <h element="molecular-formula" title="Molecular Formula"/>
+    <h element="synonyms" title="Synonyms"/>
+  </headings>
+  <compound>
+    <id>3</id>
+    <iupac-name>Oxygen</iupac-name>
+    <molecular-formula>O<sub>2</sub></molecular-formula>
+    <synonyms>Air!</synonyms>
+  </compound>
+  <compound>
+    <id>4</id>
+    <iupac-name>Bananas</iupac-name>
+    <molecular-formula>B</molecular-formula>
+    <synonyms>Bacon</synonyms>
+  </compound>
+  <compound>
+    <id>2</id>
+    <iupac-name>Water</iupac-name>
+    <molecular-formula>H<sub>2</sub>O</molecular-formula>
+    <synonyms>é</synonyms>
+  </compound>
+  <compound>
+    <id>1</id>
+    <iupac-name>Ethanol</iupac-name>
+    <molecular-formula>C<sub>1</sub>H<sub>6</sub>O</molecular-formula>
+    <synonyms>Ethyl alcohol; grain alcohol; pure alcohol</synonyms>
+  </compound>
+</compounds>

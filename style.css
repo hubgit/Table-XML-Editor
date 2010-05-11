@@ -1,0 +1,17 @@
+#buttons { position: fixed; top: 10px; left: 10px; }
+#buttons button { float: left; clear: both; }
+
+#main {  padding-left: 10em; }
+
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; vertical-align: top; max-width: 20em; }
+th, td { padding: 2px 5px; }
+tr:nth-child(even) { background-color: #eee; }
+
+th.handle { min-height: 2em; }
+
+td[data-handle="1"] { background: #ddd url("handle.png") no-repeat center center; cursor: move; width: 20px; }
+
+div[contenteditable='true'] { line-height: 2em; min-height: 2em; cursor: text; }
+
+.ui-sortable-helper { background-color: #ffa !important; }
