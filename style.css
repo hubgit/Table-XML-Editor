@@ -1,17 +1,23 @@
-#buttons { position: fixed; top: 10px; left: 10px; }
-#buttons button { float: left; clear: both; }
-
-#main {  padding-left: 10em; }
+#buttons { position: fixed; top: 0; right: 0; padding: 5px; background: rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 0px 5px 4px #aaa; }
+#buttons button { float: left; clear: both; opacity: 1; }
 
 table { border-collapse: collapse; width: 100%; }
-th, td { text-align: left; vertical-align: top; max-width: 20em; }
+th, td { text-align: left; vertical-align: top; }
 th, td { padding: 2px 5px; }
 tr:nth-child(even) { background-color: #eee; }
 
-th.handle { min-height: 2em; }
+th:first-child { min-height: 2em; width: 20px; }
 
-td[data-handle="1"] { background: #ddd url("handle.png") no-repeat center center; cursor: move; width: 20px; }
+td[data-handle="1"] { background: #ddd url("handle.png") no-repeat center center; cursor: move; min-width: 20px; max-width: 20px; }
 
-div[contenteditable='true'] { line-height: 2em; min-height: 2em; cursor: text; }
+#main table div[contenteditable], #input { line-height: 2em; min-height: 2em; cursor: text; font-size: 80% }
+#main table div[contenteditable] { white-space: nowrap; max-width: 20em; max-height: 2em; overflow: hidden; text-overflow: ellipsis; }
+#input { position: fixed; bottom: 0; left: 0; padding: 5px 10px; width: 100%; background: #fff; -moz-box-shadow: 0 0 5px 2px #bbb; }
+*[contenteditable='true']:focus { outline: none; background-color: #f6f6ff !important; }
+
+#main { margin-bottom: 10em; }
+
+#main pre { font-family: monospace; display: none; width: 100%; overflow-x: auto; background: #eee; white-space: pre-wrap; }
+#xml-toggle { margin: 10px; color: #777; cursor: pointer; }
 
 .ui-sortable-helper { background-color: #ffa !important; }

@@ -2,21 +2,43 @@ var app = {
   editing: null,
   
   init: function(){
-    app.editableNodes = $("#main table td > div");
-    app.focus();
+    app.editableNodes = $("#main table td > div[contenteditable='true']");
+    app.initFocus();
     app.command("styleWithCSS", false);
             
     $("#main table tbody").sortable({ helper: app.sortHelper, handle: '[data-handle=1]' });
+    
+    $("#xml-toggle").click(function(e){ $("#main pre").toggle(); });
   },
   
-  focus: function(){
-    $("button").click(function(){ app.editing.focus(); });
+  initFocus: function(){
+    $("#buttons button").click(function(){ app.editing.focus(); });
     
     app.editableNodes.each(function(){
-      $(this).focus(function() { app.editing = this; });
+      $(this).focus(app.itemFocus).bind("DOMSubtreeModified", app.itemModified);
     });
+    
+    $("#input").focus(app.inputFocus).bind("DOMSubtreeModified", app.inputModified);
+  },
+  
+  itemFocus: function(){
+    app.editing = this;
+    app.editingItem = this;
+    app.itemModified();
   },
 
+  itemModified: function(){
+    $("#input").unbind("DOMSubtreeModified").html($(app.editing).html()).bind("DOMSubtreeModified", app.inputModified);
+  },
+  
+  inputFocus: function(){
+    app.editing = this;
+  },
+  
+  inputModified: function(){
+    $(app.editingItem).unbind("DOMSubtreeModified").html($(this).html()).bind("DOMSubtreeModified", app.itemModified);
+  },
+  
   edit: function(){
     app.editableNodes.each(function(){
       $(this).attr("contenteditable", "true");

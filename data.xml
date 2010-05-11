@@ -1,33 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <compounds>
   <headings xmlns="org.hubmed.headings">
+    <h element="entname" title="Entity"/>
     <h element="id" title="ID"/>
-    <h element="iupac-name" title="IUPAC Name"/>
-    <h element="molecular-formula" title="Molecular Formula"/>
+    <h element="label" title="Label"/>
+    <h element="sid" title="SID"/>
+    <h element="chemical-formula" title="Formula"/>
+    <h element="mol-weight" title="Molecular Weight"/>
+    <h element="name" title="Name"/>
+    <h element="inchikey" title="InChIKey"/>
+    <h element="standard-inchikey" title="Standard InChIKey"/>
+    <h element="elemental-analysis" title="Elemental Analysis"/>
+    <h element="inchi" title="InChI"/>
+    <h element="standard-inchi" title="Standard InChI"/>
+    <h element="smiles" title="SMILES"/>
     <h element="synonyms" title="Synonyms"/>
   </headings>
   <compound>
-    <id>3</id>
-    <iupac-name>Oxygen</iupac-name>
-    <molecular-formula>O<sub>2</sub></molecular-formula>
-    <synonyms>Air!</synonyms>
+    <entname>comp1</entname>
+    <id>co1</id>
+    <label>1</label>
+    <sid>92303094</sid>
+    <chemical-formula>C<sub>24</sub>H<sub>32</sub>Cl<sub>2</sub>N<sub>2</sub>Ru</chemical-formula>
+    <mol-weight>520.50</mol-weight>
+    <name>[1,3-Bis(2,4,6-trimethylphenyl)imidazolidin-2-ylidene]dichlororuthenium(propane-1,3-diyl)</name>
+    <inchikey>UF<b>NLB</b>CMGWFFGBY-PPEPDHQZAI</inchikey>
+    <standard-inchikey>UFNLBCMGWFFGBY-UHFFFAOYSA-L</standard-inchikey>
+    <elemental-analysis>C, 55.38; H, 6.20; Cl, 13.62; N, 5.38; Ru, 19.42</elemental-analysis>
+    <inchi>1/C21H26N2.C3H6.2ClH.Ru/c1-14-9-16(3)20(17(4)10-14)22-7-8-23(13-22)21-18(5)11-15(2)12-19(21)6;1-3-2;;;/h9-12H,7-8H2,1-6H3;1-3H2;2*1H;/q;;;;+2/p-2/rC24H32Cl2N2Ru/c1-16-12-18(3)22(19(4)13-16)27-8-9-28(24(27)29(25,26)10-7-11-29)23-20(5)14-17(2)15-21(23)6/h12-15H,7-11H2,1-6H3</inchi>
+    <standard-inchi>1S/C21H26N2.C3H6.2ClH.Ru/c1-14-9-16(3)20(17(4)10-14)22-7-8-23(13-22)21-18(5)11-15(2)12-19(21)6;1-3-2;;;/h9-12H,7-8H2,1-6H3;1-3H2;2*1H;/q;;;;+2/p-2</standard-inchi>
+    <smiles>Cl[Ru]1(CCC1)(Cl)=C2N(C3=C(C)C=C(C)C=C3C)CCN2C4=C(C)C=C(C)C=C4C</smiles>
   </compound>
   <compound>
-    <id>4</id>
-    <iupac-name>Bananas</iupac-name>
-    <molecular-formula>B</molecular-formula>
-    <synonyms>Bacon</synonyms>
+    <entname>comp2</entname>
+    <id>co2</id>
+    <label>2</label>
+    <sid>92303095</sid>
+    <chemical-formula>C<sub>31</sub>H<sub>40</sub>Cl<sub>2</sub>N<sub>2</sub>O<sub>4</sub>Ru</chemical-formula>
+    <mol-weight>676.64</mol-weight>
+    <name>[1,3-Bis(2,4,6-trimethylphenyl)imidazolidin-2-ylidene]dichloro(methylidene)ruthenium(dimethyl cyclopent-3-ene-1,1-dicarboxylate)</name>
+    <inchikey>KUTLYPCSTKKXJK-VSTXNEFUBV</inchikey>
+    <standard-inchikey>KUTLYPCSTKKXJK-DQKOFLAZSA-L</standard-inchikey>
+    <elemental-analysis>C, 55.03; H, 5.96; Cl, 10.48; N, 4.14; O, 9.46; Ru, 14.94</elemental-analysis>
+    <inchi>1/C21H26N2.C10H14O4.2ClH.Ru/c1-14-9-16(3)20(17(4)10-14)22-7-8-23(13-22)21-18(5)11-15(2)12-19(21)6;1-7-4-5-10(6-7,8(11)13-2)9(12)14-3;;;/h9-12H,7-8H2,1-6H3;4,7H,1,5-6H2,2-3H3;2*1H;/q;;;;+2/p-2/t;7-;;;/m.0.../s1/rC31H40Cl2N2O4Ru/c1-18-11-20(3)26(21(4)12-18)34-9-10-35(27-22(5)13-19(2)14-23(27)6)30(34)40(32,33)17-24-15-31(16-25(24)40,28(36)38-7)29(37)39-8/h11-14,24-25H,9-10,15-17H2,1-8H3/t24-,25-/m0/s1</inchi>
+    <standard-inchi>1S/C21H26N2.C10H14O4.2ClH.Ru/c1-14-9-16(3)20(17(4)10-14)22-7-8-23(13-22)21-18(5)11-15(2)12-19(21)6;1-7-4-5-10(6-7,8(11)13-2)9(12)14-3;;;/h9-12H,7-8H2,1-6H3;4,7H,1,5-6H2,2-3H3;2*1H;/q;;;;+2/p-2/t;7-;;;/m.0.../s1</standard-inchi>
+    <smiles>Cl[Ru]1(C[C@H]2[C@@H]1CC(C(OC)=O)(C(OC)=O)C2)(Cl)=C3N(C4=C(C)C=C(C)C=C4C)CCN3C5=C(C)C=C(C)C=C5C</smiles>
   </compound>
   <compound>
-    <id>2</id>
-    <iupac-name>Water</iupac-name>
-    <molecular-formula>H<sub>2</sub>O</molecular-formula>
-    <synonyms>é</synonyms>
-  </compound>
-  <compound>
-    <id>1</id>
-    <iupac-name>Ethanol</iupac-name>
-    <molecular-formula>C<sub>1</sub>H<sub>6</sub>O</molecular-formula>
-    <synonyms>Ethyl alcohol; grain alcohol; pure alcohol</synonyms>
+    <entname>comp3</entname>
+    <id>co3</id>
+    <label>3</label>
+    <sid>92303096</sid>
+    <chemical-formula>C<sub>31</sub>H<sub>40</sub>Cl<sub>2</sub>N<sub>2</sub>O<sub>2</sub>Ru</chemical-formula>
+    <mol-weight>644.64</mol-weight>
+    <name>[1,3-Bis(2,4,6-trimethylphenyl)imidazolidin-2-ylidene]dichloro(methylidene)ruthenium(cyclopent-3-ene-1,1-diacetyl)</name>
+    <inchikey>JTGWWTNERRHYIW-OSWQDLBXBF</inchikey>
+    <standard-inchikey>JTGWWTNERRHYIW-DQKOFLAZSA-L</standard-inchikey>
+    <elemental-analysis>C, 57.76; H, 6.25; Cl, 11.00; N, 4.35; O, 4.96; Ru, 15.68</elemental-analysis>
+    <inchi>1/C21H26N2.C10H14O2.2ClH.Ru/c1-14-9-16(3)20(17(4)10-14)22-7-8-23(13-22)21-18(5)11-15(2)12-19(21)6;1-7-4-5-10(6-7,8(2)11)9(3)12;;;/h9-12H,7-8H2,1-6H3;4,7H,1,5-6H2,2-3H3;2*1H;/q;;;;+2/p-2/t;7-;;;/m.0.../s1/rC31H40Cl2N2O2Ru/c1-18-11-20(3)28(21(4)12-18)34-9-10-35(29-22(5)13-19(2)14-23(29)6)30(34)38(32,33)17-26-15-31(24(7)36,25(8)37)16-27(26)38/h11-14,26-27H,9-10,15-17H2,1-8H3/t26-,27-/m0/s1</inchi>
+    <standard-inchi>1S/C21H26N2.C10H14O2.2ClH.Ru/c1-14-9-16(3)20(17(4)10-14)22-7-8-23(13-22)21-18(5)11-15(2)12-19(21)6;1-7-4-5-10(6-7,8(2)11)9(3)12;;;/h9-12H,7-8H2,1-6H3;4,7H,1,5-6H2,2-3H3;2*1H;/q;;;;+2/p-2/t;7-;;;/m.0.../s1</standard-inchi>
+    <smiles>Cl[Ru]1(C[C@H]2[C@@H]1CC(C(C)=O)(C(C)=O)C2)(Cl)=C3N(C4=C(C)C=C(C)C=C4C)CCN3C5=C(C)C=C(C)C=C5C</smiles>
   </compound>
 </compounds>

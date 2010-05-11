@@ -7,10 +7,6 @@
   <meta charset="UTF-8">
   <title>XML Table Editor</title>  
   <link rel="stylesheet" href="style.css"></script>
-
-  <script src="/js/jquery/jquery.js"></script>
-  <script src="/js/jquery/jquery-ui/jquery-ui.js"></script>
-  <script src="script.js"></script>
 </head>
 <body>
   <div id="buttons">
@@ -33,18 +29,24 @@
     <button onclick="app.saveTable()">Save</button> 
   </div>
   
-  <div id="main">    
+  <div id="main">        
     <? $t = new Table($xml_file, $_POST['table']); ?>    
+        
+    <?= $t->html->saveXML($t->html->documentElement); ?>
+    
+    <button id="xml-toggle">Toggle XML</button>
     
     <pre><?= htmlspecialchars($t->xml->saveXML($t->xml->documentElement), ENT_QUOTES, 'UTF-8'); ?></pre>
-    
-    <div id="table-container">
-      <?= $t->html->saveXML($t->html->documentElement); ?>
-    </div>
   </div>
+  
+  <div id="input" contenteditable="true"></div>
   
   <form id="save-form" method="POST" accept-charset="utf-8">
     <input type="hidden" name="table" id="save-table">
   </form>
+  
+  <script src="/js/jquery/jquery.js"></script>
+  <script src="/js/jquery/jquery-ui/jquery-ui.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
