@@ -10,9 +10,9 @@ th:first-child { min-height: 2em; width: 20px; }
 
 td[data-handle="1"] { background: #ddd url("handle.png") no-repeat center center; cursor: move; min-width: 20px; max-width: 20px; }
 
-#main table div[contenteditable], #input { line-height: 2em; min-height: 2em; cursor: text; font-size: 80% }
-#main table div[contenteditable] { white-space: nowrap; max-width: 20em; max-height: 2em; overflow: hidden; text-overflow: ellipsis; }
-#input { position: fixed; bottom: 0; left: 0; padding: 5px 10px; width: 100%; background: #fff; -moz-box-shadow: 0 0 5px 2px #bbb; }
+#main table div[contenteditable], #input { min-height: 2em; cursor: text; font-size: 80% }
+#main table div[contenteditable] { line-height: 2em; white-space: nowrap; max-width: 20em; max-height: 2em; overflow: hidden; text-overflow: ellipsis; }
+#input { position: fixed; bottom: 0; left: 0; padding: 5px 10px; width: 100%; background: #fff; -moz-box-shadow: 0 0 5px 2px #bbb; max-height: 20em; overflow: auto; }
 *[contenteditable='true']:focus { outline: none; background-color: #f6f6ff !important; }
 
 #main { margin-bottom: 10em; }

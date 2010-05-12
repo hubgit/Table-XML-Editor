@@ -16,8 +16,8 @@
     <button onclick="app.command('superscript')">Superscript</button>
     <button onclick="app.command('subscript')">Subscript</button>
 
-    <button onclick="app.command('undo')">Undo</button>
-    <button onclick="app.command('redo')">Redo</button>
+    <button accesskey="z" onclick="app.command('undo')">Undo</button>
+    <button accesskey="y" onclick="app.command('redo')">Redo</button>
   
     <button onclick="app.createLink(prompt('Link URL', 'http://'))">Link</button>
     <button onclick="app.command('unlink')">Unlink</button>
